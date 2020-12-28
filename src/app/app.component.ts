@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { FacebookService, InitParams } from "ngx-facebook";
 import { SocialAuthService } from "angularx-social-login";
 import { GoogleLoginProvider } from "angularx-social-login";
+import { SocialUser } from "angularx-social-login";
+
 
 @Component({
   selector: 'app-root',
@@ -9,13 +10,15 @@ import { GoogleLoginProvider } from "angularx-social-login";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private facebookService: FacebookService, private authService: SocialAuthService) { }
+  user: SocialUser;
+  loggedIn: boolean;
+
+  constructor( private authService: SocialAuthService) { }
   ngOnInit(): void {
-    this.initFacebookService();
-  }
-  private initFacebookService(): void {
-    const initParams: InitParams = { xfbml:true, version:'v3.2'};
-    this.facebookService.init(initParams);
+    this.authService.authState.subscribe((user) => {
+      this.user = user;
+      this.loggedIn = (user != null);
+    });
   }
 
   signInWithGoogle(): void {

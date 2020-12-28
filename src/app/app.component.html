@@ -53,6 +53,11 @@
                 <div class="text-center mt-3">
                   <button mdbBtn color="indigo" mdbWavesEffect (click)="signInWithGoogle()">Ingresar</button>
                 </div>
+                <img src="{{ user.photoUrl }}">
+<div>
+  <h4>{{ user.name }}</h4>
+  <p>{{ user.email }}</p>
+</div>
               </mdb-card-body>
             </mdb-card>
             <!--/.Form-->
