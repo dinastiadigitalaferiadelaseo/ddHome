@@ -28,7 +28,4 @@ export class AppComponent {
   signOut(): void {
     this.authService.signOut();
   }
-
-  
-
 }
