@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { FacebookModule } from "ngx-facebook";
 import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
 import { GoogleLoginProvider } from 'angularx-social-login';
+import { AdminHomeComponent } from './componentes/admin-home/admin-home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    AdminHomeComponent,
   ],
   imports: [
     BrowserModule,
