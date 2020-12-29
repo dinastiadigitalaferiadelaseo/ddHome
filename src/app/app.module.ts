@@ -15,6 +15,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule} from '@angular/fire/auth';
 import { environment } from 'src/environments/environment';
 import { NavbarLogoutComponent } from './componentes/navbar-logout/navbar-logout.component';
+import { ProyectosSistemasComponent } from './componentes/proyectos-sistemas/proyectos-sistemas.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { NavbarLogoutComponent } from './componentes/navbar-logout/navbar-logout
     NavbarAdminComponent,
     LoginPageComponent,
     NavbarLogoutComponent,
+    ProyectosSistemasComponent,
   ],
   imports: [
     BrowserModule,
