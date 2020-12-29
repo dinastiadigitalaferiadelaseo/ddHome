@@ -7,19 +7,34 @@ import { FacebookModule } from "ngx-facebook";
 import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
 import { GoogleLoginProvider } from 'angularx-social-login';
 import { AdminHomeComponent } from './componentes/admin-home/admin-home.component';
+import { NavbarLoginComponent } from './componentes/navbar-login/navbar-login.component';
+import { NavbarAdminComponent } from './componentes/navbar-admin/navbar-admin.component';
+import { LoginPageComponent } from './componentes/login-page/login-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule} from '@angular/fire/auth';
+import { environment } from 'src/environments/environment';
+import { NavbarLogoutComponent } from './componentes/navbar-logout/navbar-logout.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminHomeComponent,
+    NavbarLoginComponent,
+    NavbarAdminComponent,
+    LoginPageComponent,
+    NavbarLogoutComponent,
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
     FacebookModule.forRoot(),
     AppRoutingModule,
-    SocialLoginModule
+    SocialLoginModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule
   ],
   providers: [
     {
