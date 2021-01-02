@@ -16,6 +16,7 @@ import { AngularFireAuthModule} from '@angular/fire/auth';
 import { environment } from 'src/environments/environment';
 import { NavbarLogoutComponent } from './componentes/navbar-logout/navbar-logout.component';
 import { ProyectosSistemasComponent } from './componentes/proyectos-sistemas/proyectos-sistemas.component';
+import { ChatgeneralComponent } from './componentes/chatgeneral/chatgeneral.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { ProyectosSistemasComponent } from './componentes/proyectos-sistemas/pro
     LoginPageComponent,
     NavbarLogoutComponent,
     ProyectosSistemasComponent,
+    ChatgeneralComponent,
   ],
   imports: [
     BrowserModule,
