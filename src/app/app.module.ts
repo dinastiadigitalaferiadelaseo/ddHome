@@ -17,6 +17,8 @@ import { environment } from 'src/environments/environment';
 import { NavbarLogoutComponent } from './componentes/navbar-logout/navbar-logout.component';
 import { ProyectosSistemasComponent } from './componentes/proyectos-sistemas/proyectos-sistemas.component';
 import { ChatgeneralComponent } from './componentes/chatgeneral/chatgeneral.component';
+import { ProyectosAdministracionComponent } from './componentes/proyectos-administracion/proyectos-administracion.component';
+import { AdminHomeAdministracionComponent } from './componentes/admin-home-administracion/admin-home-administracion.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { ChatgeneralComponent } from './componentes/chatgeneral/chatgeneral.comp
     NavbarLogoutComponent,
     ProyectosSistemasComponent,
     ChatgeneralComponent,
+    ProyectosAdministracionComponent,
+    AdminHomeAdministracionComponent,
   ],
   imports: [
     BrowserModule,
