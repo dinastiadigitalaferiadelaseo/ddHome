@@ -19,8 +19,7 @@ export class NavbarLoginComponent implements OnInit {
     this.user = await this.AuthSvc.getCurrentUser();
     if(this.user){
       this.isLogged = true;
-      console.log("User->", this.user);
-      console.log(this.isLogged)
+      this._router.navigate(["/admin-home"]);
     }
   }
 
