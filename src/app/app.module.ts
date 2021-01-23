@@ -19,6 +19,8 @@ import { ProyectosSistemasComponent } from './componentes/proyectos-sistemas/pro
 import { ChatgeneralComponent } from './componentes/chatgeneral/chatgeneral.component';
 import { ProyectosAdministracionComponent } from './componentes/proyectos-administracion/proyectos-administracion.component';
 import { AdminHomeAdministracionComponent } from './componentes/admin-home-administracion/admin-home-administracion.component';
+import { ConfigAdminComponent } from './componentes/config-admin/config-admin.component';
+import { ProyectosconfigAdminComponent } from './componentes/proyectosconfig-admin/proyectosconfig-admin.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { AdminHomeAdministracionComponent } from './componentes/admin-home-admin
     ChatgeneralComponent,
     ProyectosAdministracionComponent,
     AdminHomeAdministracionComponent,
+    ConfigAdminComponent,
+    ProyectosconfigAdminComponent,
   ],
   imports: [
     BrowserModule,
