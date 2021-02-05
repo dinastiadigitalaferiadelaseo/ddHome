@@ -21,6 +21,8 @@ import { ProyectosAdministracionComponent } from './componentes/proyectos-admini
 import { AdminHomeAdministracionComponent } from './componentes/admin-home-administracion/admin-home-administracion.component';
 import { ConfigAdminComponent } from './componentes/config-admin/config-admin.component';
 import { ProyectosconfigAdminComponent } from './componentes/proyectosconfig-admin/proyectosconfig-admin.component';
+import { ProyectHomeComponent } from './componentes/proyect-home/proyect-home.component';
+import { ResultadosHomeComponent } from './componentes/resultados-home/resultados-home.component';
 
 
 @NgModule({
@@ -37,6 +39,8 @@ import { ProyectosconfigAdminComponent } from './componentes/proyectosconfig-adm
     AdminHomeAdministracionComponent,
     ConfigAdminComponent,
     ProyectosconfigAdminComponent,
+    ProyectHomeComponent,
+    ResultadosHomeComponent,
   ],
   imports: [
     BrowserModule,

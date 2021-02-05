@@ -1,0 +1,141 @@
+<app-navbar-logout></app-navbar-logout>
+<header>
+    <div class="view">
+        <div class="mask rgba-indigo-strong d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+                <!--columna #1 --> 
+                    <div class="col-md-4">
+                        <app-navbar-admin></app-navbar-admin>
+                    </div>
+                <!-- Columna #2 -->
+                    <div class="col-md-8">
+                        <app-chatgeneral></app-chatgeneral>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<mdb-card class="proyectCard">
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect> 
+            <mdb-icon fas icon="chevron-circle-left"></mdb-icon>Volver</button>
+        <a mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect target="blank" href="https://workflowy.com/s/resultados-finales-p/IQXtClVyewZBfgQM">
+            <mdb-icon fab icon="buffer"></mdb-icon> Resultados Finales </a>
+    </div>
+    <mdb-card-body>
+  
+      <!--Title-->
+      <mdb-card-title>
+        <h4>Proyecto - Home</h4>
+      </mdb-card-title>
+      <div class="zoom">
+      <img src="../../../assets/hompage.png" alt="thumbnail" class="img-thumbnail"
+  style="width: 250px; height: 200px;">
+</div>
+      <!--Text-->
+      <mdb-card-text> Equipo de desarrollo
+      </mdb-card-text>
+        <!--Grid row-->
+        <div class="row">
+        <!--Grid column-->
+        <div class="col-md-6 zoom">
+            <a data-toggle="modal" data-target="#basicExample" (click)="frame.show()"
+  mdbWavesEffect>
+            <img src="../../../assets/diseñoUx.jpg" alt="thumbnail" class="img-thumbnail"
+            style="width: 250px; height: 200px;"> 
+        </a>
+        </div>
+        <!--Grid column-->
+
+<div mdbModal #frame="mdbModal" class="modal fade" id="frameModalTop" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog cascading-modal" role="document">
+
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Header-->
+      <div class="modal-header light-blue darken-3 white-text">
+        <h4 class="title">
+          <mdb-icon fas icon="users"></mdb-icon> Diseño UX - Proyecto HOME</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="frame.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <a target="_Blank" (click)="frame.hide()" mdbBtn type="button" color="info" outline="true" mdbWavesEffect href="https://universidaddigital.atlassian.net/secure/RapidBoard.jspa?projectKey=UDUPH&rapidView=3&atlOrigin=eyJpIjoiNDNmYmFhNTNiZTFmNDEzYjkwY2M1NWE3YWVlODNiMjUiLCJwIjoiaiJ9">
+        Abrir proceso SCRUM
+      </a>
+
+    <hr class="my-5">
+        <H3>Herramientas</H3>
+
+      <!--Body-->
+      <div class="modal-body mb-0 text-center">
+        
+        
+
+        <!--LucidChart-->
+        <a type="button" mdbBtn floating="true" color="fb" class="waves-light" mdbWavesEffect href="https://lucid.app/users/login#/login" target="_Blank">
+          <img src="../../../assets/lucidChart.png" class="herramientasUX">
+        </a>
+        &nbsp;&nbsp;
+        <!--Twitter-->
+        <a type="button" mdbBtn floating="true" color="fb" class="waves-light" mdbWavesEffect href="https://www.figma.com/files/recent" target="_Blank">
+            <img src="../../../assets/figma.png" class="herramientasUX">
+          </a>
+        &nbsp;&nbsp;
+        <!--Google +-->
+        <a type="button" mdbBtn floating="true" color="fb" class="waves-light" mdbWavesEffect>
+            <img src="../../../assets/lucidChart.png" class="herramientasUX" >
+          </a>
+
+      </div>
+
+    </div>
+    <!--/.Content-->
+
+  </div>
+</div>
+        <!--Grid column-->
+        <div class="col-md-6 zoom">
+            <a href="">
+            <img src="../../../assets/diseñoUi.jpg" alt="thumbnail" class="img-thumbnail"
+            style="width: 250px; height: 200px;">
+            </a>
+        </div>
+        <!--Grid column-->
+        </div>
+        <!--Grid row-->
+  <br/>
+        <!--Grid row-->
+        <div class="row">
+        <!--Grid column-->
+        <div class="col-md-6 zoom">
+            <a href="">
+            <img src="../../../assets/diseñadorFrontend.jpg" alt="thumbnail" class="img-thumbnail"
+            style="width: 250px; height: 200px;">
+            </a>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-md-6 zoom">
+            <a href="">
+            <img src="../../../assets/diseñadorBackend.jpg" alt="thumbnail" class="img-thumbnail"
+            style="width: 250px; height: 200px;">
+            </a>
+        </div>
+        <!--Grid column-->
+        </div>
+        <!--Grid row-->
+    <br/>
+        <div class="zoom">
+            <a href="">
+            <img src="../../../assets/arquitecturaSoftware.jpg" alt="thumbnail" class="img-thumbnail"
+            style="width: 250px; height: 200px;">
+            </a>
+    </div>
+    </mdb-card-body>
+  </mdb-card>
