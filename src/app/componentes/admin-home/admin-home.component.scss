@@ -1,84 +1,111 @@
-/* Required for full background image */
-
-html,
-body,
-header,
-.view {
-  min-height: 100vh;
-}
-
-
-
-@media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 1100px;
+@media (max-width: 600px) {
+  .view{
+    background-color: #4d508a;
   }
-}
-@media (min-width: 800px) and (max-width: 850px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 700px;
+  .letterView{
+    height: 500px;
+      .heading {
+        margin: 0 6rem;
+        font-weight: 700;
+        color: #f8edfc;
+      }
+      .subheading {
+        margin: 2.5rem 6rem;
+        color: #d8d8d8;
+      }
+      .buttonEmpezar{
+        background-color: red;
+        font-style:italic;
+        color: white;
+      }
   }
-}
-
-.top-nav-collapse {
-  background-color: #39448c !important;
-}
-
-.navbar:not(.top-nav-collapse) {
-  background: transparent !important;
-}
-
-@media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #39448c !important;
+  .videoHome{
+    display: none;
   }
-}
 
-h6 {
-  line-height: 1.7;
-}
-
-.view{
-    background-image: url('https://github.com/UniDigitalPanel/imagenespublicas/blob/main/portada-login.jpg?raw=true'); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center center;
-}
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 65px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
   }
+
+  @media (min-width: 601px) and (max-width:800px) {
+    .view{
+      background-color: #026e86;
+      height: 600px;
+    }
+    .letterView{
+      height: 500px;
+        .heading {
+          margin: 0 6rem;
+          font-weight: 700;
+          color: #f8edfc;
+        }
+        .subheading {
+          margin: 2.5rem 6rem;
+          color: #d8d8d8;
+        }
+        .buttonEmpezar{
+          background-color: rgb(15, 105, 71);
+          font-style:italic;
+          color: white;
+        }
+    }
+    .videoHome{
+      width: 800px;
+    }
   
-  .fa:hover {
-      opacity: 0.7;
+    }
+
+.navbar {
+    background: linear-gradient(40deg, rgba(0,51,199,.3), rgba(209,149,249,.3));
+  }
+  .navbar:not(.top-nav-collapse) {
+    background: transparent;
+  }
+  .navbar .navbar-brand img {
+    height: 40px;
+    margin: 10px;
+  }
+  .hm-gradient {
+    background: linear-gradient(40deg, rgba(0,51,199,.3), rgba(209,149,249,.3));
+  }
+  .heading {
+    margin: 0 6rem;
+    font-weight: 700;
+    color: #5d4267;
+  }
+  .subheading {
+    margin: 2.5rem 6rem;
+    color: #bcb2c0;
+  }
+  .btn.btn-margin {
+    margin-left: 6rem;
+    margin-top: 3rem;
+  }
+  .btn.btn-lily {
+    background: linear-gradient(40deg, rgba(0,51,199,.7), rgba(209,149,249,.7));
+  }
+  .title {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    color: #5d4267;
+  }
+  .subtitle {
+    color: #bcb2c0;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 6rem;
+  }
+  .dropdown-menu {
+    left: unset !important;
+    right: 0 ;
   }
 
-.fa-google {
-    background: #39448c;
-    color: white;
+  .videoHome{
+    width: 1400px;
   }
-.md-form{
+  .buttonEmpezar{
+    color: rgb(238, 239, 255);
     text-align: center;
-}
-.img-logo{
-    max-width: 50px;
-    max-height: 50px;
-}
-.google-button {
-  max-width: 200px;
-  max-height: 200px;
-  text-align: center;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ 

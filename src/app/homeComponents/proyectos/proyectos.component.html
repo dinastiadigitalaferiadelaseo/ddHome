@@ -1,0 +1,32 @@
+
+ <mdb-card class="cardProyectos">
+    <h2 class="h1 py-5 font-weight-bold title animated bounceInRight" data-wow-delay="6s" style="text-align: center;">PROYECTOS ACTIVOS</h2>
+<!--Section-->
+<section class="text-center pb-3 my-5">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-12 mb-4 zoomInRight" *ngFor="let proyect of proyectos" >
+        <mdb-card class="pricing-card Card" >
+          
+          <mdb-card-body class="striped">
+          <picture loading="lazy" class="imagen zoom wow fadeInUp" data-wow-delay="0.6s">
+              <source srcset='{{proyect["imagenWebp"]}}' type="image/webp" loading="lazy" class="zoom wow fadeInUp" data-wow-delay="0.6s">
+              <source srcset='{{proyect["imagenJpg"]}}' type="image/jpg" loading="lazy" class="zoom wow fadeInUp" data-wow-delay="0.6s">
+              <img src='{{proyect["imagenJpg"]}}' type="image/jpg" loading="lazy" class="zoom wow fadeInUp" data-wow-delay="0.6s" >
+          </picture>
+          <h4 class="titleCard">{{proyect["title"]}}</h4>
+          <mdb-card-text>
+            {{proyect["description"]}}
+          </mdb-card-text>
+          <button mdbBtn type="button" gradient="purple" size="lg" mdbWavesEffect class="Button "> <mdb-icon fas icon="sign-out-alt"></mdb-icon> Ver Más... </button>
+
+
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+    </div>
+  </section>
+  <!--Section-->
+</mdb-card>
+

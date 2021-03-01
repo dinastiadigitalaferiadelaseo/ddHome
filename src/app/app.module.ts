@@ -13,6 +13,7 @@ import { LoginPageComponent } from './componentes/login-page/login-page.componen
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule} from '@angular/fire/auth';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from 'src/environments/environment';
 import { NavbarLogoutComponent } from './componentes/navbar-logout/navbar-logout.component';
 import { ProyectosSistemasComponent } from './componentes/proyectos-sistemas/proyectos-sistemas.component';
@@ -23,6 +24,12 @@ import { ConfigAdminComponent } from './componentes/config-admin/config-admin.co
 import { ProyectosconfigAdminComponent } from './componentes/proyectosconfig-admin/proyectosconfig-admin.component';
 import { ProyectHomeComponent } from './componentes/proyect-home/proyect-home.component';
 import { ResultadosHomeComponent } from './componentes/resultados-home/resultados-home.component';
+import { HomePageComponent } from './homeComponents/home-page/home-page.component';
+import { HeaderComponent } from './homeComponents/header/header.component';
+import { ProyectosComponent } from './homeComponents/proyectos/proyectos.component';
+import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
+import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
+import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
 
 
 @NgModule({
@@ -41,6 +48,12 @@ import { ResultadosHomeComponent } from './componentes/resultados-home/resultado
     ProyectosconfigAdminComponent,
     ProyectHomeComponent,
     ResultadosHomeComponent,
+    HomePageComponent,
+    HeaderComponent,
+    ProyectosComponent,
+    AddTutorialComponent,
+    TutorialDetailsComponent,
+    TutorialsListComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +62,8 @@ import { ResultadosHomeComponent } from './componentes/resultados-home/resultado
     AppRoutingModule,
     SocialLoginModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
   providers: [

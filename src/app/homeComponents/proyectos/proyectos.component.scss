@@ -1,0 +1,80 @@
+@media (max-width: 600px) {
+    .cardProyectos{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .pricing-card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+    .cardProyectos{
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .pricing-card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 1001px) {
+    .cardProyectos{
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .pricing-card{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+.title{
+    color: #5d4267;
+}
+
+.titleCard{
+    color: #764a86;
+}
+.imagen {
+    max-width: 600px;
+    max-height: 500px;
+}
+
+.Card {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    position: relative;
+  }
+  
+  @keyframes example {
+    from {background-color: #5d4267;top: 200px;}
+    to {background-color: white; top: 0px;}
+  }
+
+.Button {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(180, 113, 224, .1);
+    }
+    70%{
+        transform: scale(1);
+        box-shadow: 0 0 0 25px rgba(231, 111, 204, 0);
+    }
+    100%{
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(256, 256, 256, 0);
+    }
+
+}
