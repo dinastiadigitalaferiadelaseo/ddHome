@@ -30,6 +30,7 @@ import { ProyectosComponent } from './homeComponents/proyectos/proyectos.compone
 import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
 import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
 import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
+import { NgwWowModule } from 'ngx-wow';
 
 
 @NgModule({
@@ -64,7 +65,8 @@ import { TutorialsListComponent } from './components/tutorials-list/tutorials-li
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    NgwWowModule
   ],
   providers: [
     {

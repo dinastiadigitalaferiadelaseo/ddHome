@@ -13,7 +13,8 @@ export class AppComponent {
   user: SocialUser;
   loggedIn: boolean;
 
-  constructor( private authService: SocialAuthService) { }
+  constructor( private authService: SocialAuthService) {
+   }
   ngOnInit(): void {
     this.authService.authState.subscribe((user) => {
       this.user = user;
