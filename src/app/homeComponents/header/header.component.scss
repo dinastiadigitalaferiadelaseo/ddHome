@@ -50,6 +50,9 @@
       .videoHome{
         width: 800px;
       }
+      .imagenHead{
+        width: 1200px;
+      }
     
       }
   
@@ -110,5 +113,8 @@
 
     video::-webkit-media-controls {
       display: none;
+    }
+    .imagenHead{
+      max-width: 1400px;
     }
   

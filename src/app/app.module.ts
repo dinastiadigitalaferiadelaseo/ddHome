@@ -6,55 +6,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { FacebookModule } from "ngx-facebook";
 import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-login';
 import { GoogleLoginProvider } from 'angularx-social-login';
-import { AdminHomeComponent } from './componentes/admin-home/admin-home.component';
-import { NavbarLoginComponent } from './componentes/navbar-login/navbar-login.component';
-import { NavbarAdminComponent } from './componentes/navbar-admin/navbar-admin.component';
-import { LoginPageComponent } from './componentes/login-page/login-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule} from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from 'src/environments/environment';
-import { NavbarLogoutComponent } from './componentes/navbar-logout/navbar-logout.component';
-import { ProyectosSistemasComponent } from './componentes/proyectos-sistemas/proyectos-sistemas.component';
-import { ChatgeneralComponent } from './componentes/chatgeneral/chatgeneral.component';
-import { ProyectosAdministracionComponent } from './componentes/proyectos-administracion/proyectos-administracion.component';
-import { AdminHomeAdministracionComponent } from './componentes/admin-home-administracion/admin-home-administracion.component';
-import { ConfigAdminComponent } from './componentes/config-admin/config-admin.component';
-import { ProyectosconfigAdminComponent } from './componentes/proyectosconfig-admin/proyectosconfig-admin.component';
-import { ProyectHomeComponent } from './componentes/proyect-home/proyect-home.component';
-import { ResultadosHomeComponent } from './componentes/resultados-home/resultados-home.component';
 import { HomePageComponent } from './homeComponents/home-page/home-page.component';
 import { HeaderComponent } from './homeComponents/header/header.component';
 import { ProyectosComponent } from './homeComponents/proyectos/proyectos.component';
-import { AddTutorialComponent } from './components/add-tutorial/add-tutorial.component';
-import { TutorialDetailsComponent } from './components/tutorial-details/tutorial-details.component';
-import { TutorialsListComponent } from './components/tutorials-list/tutorials-list.component';
 import { NgwWowModule } from 'ngx-wow';
+import { DetallesProyectoComponent } from './homeComponents/detalles-proyecto/detalles-proyecto.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminHomeComponent,
-    NavbarLoginComponent,
-    NavbarAdminComponent,
-    LoginPageComponent,
-    NavbarLogoutComponent,
-    ProyectosSistemasComponent,
-    ChatgeneralComponent,
-    ProyectosAdministracionComponent,
-    AdminHomeAdministracionComponent,
-    ConfigAdminComponent,
-    ProyectosconfigAdminComponent,
-    ProyectHomeComponent,
-    ResultadosHomeComponent,
     HomePageComponent,
     HeaderComponent,
     ProyectosComponent,
-    AddTutorialComponent,
-    TutorialDetailsComponent,
-    TutorialsListComponent,
+    DetallesProyectoComponent,
   ],
   imports: [
     BrowserModule,
