@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ProyectosNewStartapService } from 'src/app/services/proyectos-new-startap.service';
 import { DataProyects } from '../../model/data-proyects';
 import { map } from 'rxjs/operators';
+
 @Component({
-  selector: 'app-proyectos',
-  templateUrl: './proyectos.component.html',
-  styleUrls: ['./proyectos.component.scss']
+  selector: 'app-proyects',
+  templateUrl: './proyects.component.html',
+  styleUrls: ['./proyects.component.scss']
 })
-export class ProyectosComponent implements OnInit {
+export class ProyectsComponent implements OnInit {
   proyectos?: DataProyects[];
 
   constructor(private proyectosService: ProyectosNewStartapService) { }
@@ -28,4 +29,5 @@ export class ProyectosComponent implements OnInit {
     });
   }
 }
+
 
