@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { QuicklinkStrategy } from'ngx-quicklink';
+import { QuicklinkModule, QuicklinkStrategy } from 'ngx-quicklink';
 
 import { AuthGuard } from 'src/app/guards/auth.guard';
 import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
@@ -12,10 +12,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{
-    enableTracing: false,
-    preloadingStrategy: QuicklinkStrategy
-  })],
+  imports: [
+    QuicklinkModule,
+    RouterModule.forRoot(routes, { preloadingStrategy: QuicklinkStrategy }),
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
