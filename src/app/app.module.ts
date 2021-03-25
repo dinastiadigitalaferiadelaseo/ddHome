@@ -9,7 +9,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule} from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from 'src/environments/environment';
-import { NgwWowModule } from 'ngx-wow';
+
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import { NgwWowModule } from 'ngx-wow';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    NgwWowModule
+    
   ],
   providers: [
     {

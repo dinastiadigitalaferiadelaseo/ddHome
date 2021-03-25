@@ -7,15 +7,20 @@ import { HeaderComponent } from './header/header.component';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ProyectsComponent } from './proyects/proyects.component';
+import { NgwWowModule } from 'ngx-wow';
 
 
 @NgModule({
-  declarations: [HomepageComponent, HeaderComponent, ProyectsComponent],
+  declarations: [
+    HomepageComponent,
+    HeaderComponent, 
+    ProyectsComponent
+  ],
   imports: [
     CommonModule,
     HomeComponentsRoutingModule,
     MDBBootstrapModule.forRoot(),
-    
+    NgwWowModule,
   ],
 })
 export class HomeComponentsModule { }
