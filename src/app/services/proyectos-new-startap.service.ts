@@ -20,6 +20,10 @@ export class ProyectosNewStartapService {
     return this.proyectsRef;
   }
 
+  getUno(i: string | number): AngularFireList<DataProyects> {
+    return this.proyectsRef[i];
+  }
+
   create(dataProyects: DataProyects): any {
     return this.proyectsRef.push(dataProyects);
   }
@@ -35,6 +39,8 @@ export class ProyectosNewStartapService {
   deleteAll(): Promise<void> {
     return this.proyectsRef.remove();
   }
+
+  
 }
 
 

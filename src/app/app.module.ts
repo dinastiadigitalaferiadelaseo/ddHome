@@ -10,6 +10,8 @@ import { AngularFireAuthModule} from '@angular/fire/auth';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from 'src/environments/environment';
 
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { environment } from 'src/environments/environment';
     BrowserModule,
     AppRoutingModule,
     SocialLoginModule,
+    FormsModule,
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,

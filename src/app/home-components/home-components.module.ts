@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ProyectsComponent } from './proyects/proyects.component';
 import { NgwWowModule } from 'ngx-wow';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { NgwWowModule } from 'ngx-wow';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     HomeComponentsRoutingModule,
     MDBBootstrapModule.forRoot(),
     NgwWowModule,

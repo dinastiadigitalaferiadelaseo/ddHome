@@ -3,6 +3,8 @@ import { ProyectosNewStartapService } from 'src/app/services/proyectos-new-start
 import { DataProyects } from '../../model/data-proyects';
 import { map } from 'rxjs/operators';
 
+import { Router, ActivatedRoute } from '@angular/router';
+
 @Component({
   selector: 'app-proyects',
   templateUrl: './proyects.component.html',
@@ -10,12 +12,20 @@ import { map } from 'rxjs/operators';
 })
 export class ProyectsComponent implements OnInit {
   proyectos?: DataProyects[];
+  currentTutorial?: DataProyects;
+  currentIndex = -1;
+  title = '';
 
-  constructor(private proyectosService: ProyectosNewStartapService) { }
+
+  constructor(private proyectosService: ProyectosNewStartapService, private ruta: ActivatedRoute, private router: Router) { 
+    
+  }
+
 
   ngOnInit(): void {
     this.retrieveTutorials();
   }
+
 
   retrieveTutorials(): void {
     this.proyectosService.getAll().snapshotChanges().pipe(
