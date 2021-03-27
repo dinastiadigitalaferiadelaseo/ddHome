@@ -12,14 +12,14 @@
           <mdb-card-body class="striped">
             <a [routerLink]="['/detalles-proyecto',i]">
           <picture loading="lazy" class="imagen zoom wow fadeInUp" data-wow-delay="0.6s">
-              <source srcset='{{proyect["imagenWebp"]}}' type="image/webp" loading="lazy" class="zoom wow fadeInUp" data-wow-delay="0.6s">
-              <source srcset='{{proyect["imagenJpg"]}}' type="image/jpg" loading="lazy" class="zoom wow fadeInUp" data-wow-delay="0.6s">
-              <img src='{{proyect["imagenJpg"]}}' type="image/jpg" loading="lazy" class="zoom wow fadeInUp" data-wow-delay="0.6s" >
+              <source srcset='{{proyect["IMAGEN300X350WEBP"]}}' type="image/webp" loading="lazy" class="zoom wow fadeInUp" data-wow-delay="0.6s">
+              <source srcset='{{proyect["IMAGEN300X350JPG"]}}' type="image/jpg" loading="lazy" class="zoom wow fadeInUp" data-wow-delay="0.6s">
+              <img src='{{proyect["IMAGEN300X350JPG"]}}' type="image/jpg" loading="lazy" class="zoom wow fadeInUp" data-wow-delay="0.6s" >
           </picture>
         </a>
-          <h4 class="titleCard">{{proyect["title"]}}</h4>
+          <h4 class="titleCard">{{proyect["TITLE"]}}</h4>
           <mdb-card-text>
-            {{proyect["description"]}}
+            {{proyect["DESCRIPTION"]}}
           </mdb-card-text>
           <button mdbBtn type="button" gradient="purple" rounded="true" mdbWavesEffect [routerLink]="['/detalles-proyecto',i]">
             <mdb-icon fas icon="sign-out-alt"></mdb-icon> Ver Más... 
