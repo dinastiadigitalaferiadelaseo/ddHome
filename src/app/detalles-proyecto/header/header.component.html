@@ -15,10 +15,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#team" data-offset="90">Equipo del proyecto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{key.LINKPARTICIPAR}}" data-offset="90">Participar en este proyecto</a>
+            <a class="nav-link" href="{{key.LINKPARTICIPAR}}" data-offset="90" target="_Blank">Participar en este proyecto</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact" data-offset="90">Postular nuevo proyecto</a>
@@ -72,7 +69,7 @@
               <h5 class="subtext-header mt-2 mb-4">{{key.DESCRIPTIONLARGE}}</h5>
               <h4 class="subtext-header mt-2 mb-4">Ventajas de participar en el proyecto</h4>
               <h5 class="subtext-header mt-2 mb-4">{{key.VENTAJAS}}</h5>
-              <div class="btn-group" role="group" aria-label="Basic example">
+              <div class="btn-group grupoButtons" role="group" aria-label="Basic example">
                 <a href="{{key.LINKCONOCERMAS}}" target="_Blank" mdbBtn color="white" rounded="true" outline="true" mdbWavesEffect>
                   <mdb-icon fas icon="eye"></mdb-icon> Conocer más el proyecto
                 </a>
@@ -83,6 +80,8 @@
                   <mdb-icon fas icon="briefcase"></mdb-icon> Participar en el proyecto
                 </a>
             </div>
+
+            
   
             </div>
             <!--Grid column-->
@@ -100,3 +99,29 @@
     <!-- Full Page Intro -->
   
   </header>
+  <mdb-card class="seccionParticipantes">
+  <section class="text-center pb-3 my-5" >
+    <!--Grid row-->
+    <div class="row cardParticipantes" >
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-12 mb-4 zoomInRight" *ngFor="let name of var21" >
+        <mdb-card class="pricing-card Card " *ngIf="name.name.length">
+          
+          <mdb-card-body class="striped">
+          <a href="{{name.link}}" target="_Blank">
+          <img src="{{name.imagen}}" alt="">
+          </a>
+          <br/>
+          <br/>
+          <mdb-card-title color="blue">
+          <h1>{{name.name}}</h1>
+          </mdb-card-title>
+          <a mdbBtn type="button" gradient="purple" rounded="true" mdbWavesEffect href="{{name.link}}" target="_Blank">
+            <mdb-icon fas icon="sign-out-alt"></mdb-icon> Conocer participante...
+          </a>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+    </div>
+  </section>
+  </mdb-card>

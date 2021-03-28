@@ -13,7 +13,7 @@ header,
   body,
   header,
   #intro-section {
-    min-height: 100vh;
+    min-height: 250vh;
   }
 }
 
@@ -39,4 +39,23 @@ header,
 
 .view.mask {
   overflow: auto !important;
+}
+
+@media (min-width: 740px) {
+  .seccionParticipantes { 
+    max-width: 80%; 
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cardParticipantes{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
 }

@@ -14,9 +14,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    QuicklinkModule,
-    RouterModule.forRoot(routes, { preloadingStrategy: QuicklinkStrategy }),
-  ],
+    QuicklinkModule, 
+    RouterModule.forRoot(routes,{ preloadingStrategy: QuicklinkStrategy } ),
+    RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'} ),
+    ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
