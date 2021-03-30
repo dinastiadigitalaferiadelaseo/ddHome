@@ -11,12 +11,14 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from 'src/environments/environment';
 
 import { FormsModule } from '@angular/forms';
+import { LoginPageGuardComponent } from './loginGuard/login-page-guard/login-page-guard.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginPageGuardComponent,
   ],
   imports: [
     BrowserModule,
