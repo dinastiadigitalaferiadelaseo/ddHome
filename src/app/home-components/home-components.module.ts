@@ -9,13 +9,14 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ProyectsComponent } from './proyects/proyects.component';
 import { NgwWowModule } from 'ngx-wow';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     HomepageComponent,
     HeaderComponent, 
-    ProyectsComponent
+    ProyectsComponent, FooterComponent
   ],
   imports: [
     CommonModule,
