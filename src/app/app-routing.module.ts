@@ -11,6 +11,8 @@ const routes: Routes = [
   { path: 'home-page', loadChildren: () => import('./home-components/home-components.module').then(m => m.HomeComponentsModule)},
   { path: 'detalles-proyecto/:id', loadChildren: () => import('./detalles-proyecto/detalles-proyecto.module').then(m => m.DetallesProyectoModule)},
   { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
+  { path: 'mision', loadChildren: () => import('./mision/mision.module').then(m => m.MisionModule)},
+  { path: 'vision', loadChildren: () => import('./vision/vision.module').then(m => m.VisionModule)},
 ];
 
 @NgModule({

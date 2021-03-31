@@ -16,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     HomepageComponent,
     HeaderComponent, 
-    ProyectsComponent, FooterComponent
+    ProyectsComponent, 
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -25,5 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     MDBBootstrapModule.forRoot(),
     NgwWowModule,
   ],
+  exports: [
+    FooterComponent
+  ]
 })
 export class HomeComponentsModule { }

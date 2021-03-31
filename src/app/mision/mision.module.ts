@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { LoginRoutingModule } from './login-routing.module';
-import { LoginPageComponent } from './login-page/login-page.component';
+import { MisionRoutingModule } from './mision-routing.module';
+import { MisionPageComponent } from './mision-page/mision-page.component';
 import { HeaderComponent } from './header/header.component';
 import { MDBBootstrapModule } from 'projects/angular-bootstrap-md/src/public_api';
 import { NgwWowModule } from 'ngx-wow';
@@ -10,13 +10,13 @@ import { HomeComponentsModule } from '../home-components/home-components.module'
 
 
 @NgModule({
-  declarations: [LoginPageComponent, HeaderComponent],
+  declarations: [MisionPageComponent, HeaderComponent],
   imports: [
     CommonModule,
-    LoginRoutingModule,
+    MisionRoutingModule,
     MDBBootstrapModule.forRoot(),
     NgwWowModule,
     HomeComponentsModule
   ]
 })
-export class LoginModule { }
+export class MisionModule { }

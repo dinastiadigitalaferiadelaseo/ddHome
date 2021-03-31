@@ -8,6 +8,7 @@ import { DetallesProyectoComponent } from './detalles-proyecto/detalles-proyecto
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { NgwWowModule } from 'ngx-wow';
 import { ParticiparProyectComponent } from './participar-proyect/participar-proyect.component';
+import { HomeComponentsModule } from '../home-components/home-components.module';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { ParticiparProyectComponent } from './participar-proyect/participar-proy
     DetallesProyectoRoutingModule,
     MDBBootstrapModule.forRoot(),
     NgwWowModule,
+    HomeComponentsModule
     
   ]
 })
