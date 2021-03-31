@@ -2,11 +2,18 @@
 <header>
 
     <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-      <mdb-navbar-brand>
+      <mdb-navbar-brand class="iconoPrincipal">
         <a class="navbar-brand" href="">
           <img class="animated bounce infinite" src="https://res.cloudinary.com/newstartap/image/upload/v1616781269/assetsNewStartap/Logo/logopng100x100_2_vivyut.png" height="30" alt="">
         </a>
       </mdb-navbar-brand>
+
+      <mdb-navbar-brand class="iconoSecundario">
+        <a class="navbar-brand" href="">
+          <img class="animated bounce infinite" src="https://res.cloudinary.com/newstartap/image/upload/v1617156711/assetsNewStartap/Logo/logopng100x100_6_pkls6m.png" height="30" alt="">
+        </a>
+      </mdb-navbar-brand >
+      
       <links>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
@@ -80,6 +87,19 @@
                   <mdb-icon fas icon="briefcase"></mdb-icon> Participar en el proyecto
                 </a>
             </div>
+
+            <a href="{{key.LINKCONOCERMAS}}" target="_Blank" mdbBtn color="white" rounded="true" outline="true" mdbWavesEffect
+            class="buttons">
+              <mdb-icon fas icon="eye"></mdb-icon> Conocer más el proyecto
+            </a>
+            <a href="{{key.LINKADMIN}}" target="_Blank" mdbBtn color="white" rounded="true" outline="true" mdbWavesEffect
+            class="buttons">
+              <mdb-icon fas icon="tools"></mdb-icon> Area administrativa del proyecto
+            </a>
+            <a href="{{key.LINKPARTICIPAR}}" target="_Blank" mdbBtn color="white" rounded="true" outline="true" mdbWavesEffect
+            class="buttons">
+              <mdb-icon fas icon="briefcase"></mdb-icon> Participar en el proyecto
+            </a>
 
             
   

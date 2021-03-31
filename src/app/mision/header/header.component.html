@@ -2,26 +2,35 @@
 <header>
     <!--Navbar-->
     <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-      <mdb-navbar-brand>
-        <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"><strong>MDB</strong></a>
+      <mdb-navbar-brand class="iconoPrincipal">
+        <a class="navbar-brand" href="">
+          <img class="animated bounce infinite" src="https://res.cloudinary.com/newstartap/image/upload/v1616781269/assetsNewStartap/Logo/logopng100x100_2_vivyut.png" height="30" alt="">
+        </a>
       </mdb-navbar-brand>
       <links>
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active waves-light" mdbWavesEffect>
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item waves-light" mdbWavesEffect>
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item waves-light" mdbWavesEffect>
-            <a class="nav-link" href="#">Profile</a>
+          <li class="nav-item">
+            <a class="nav-link" href="">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
           </li>
         </ul>
-        <form class="form-inline">
-          <div class="md-form my-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          </div>
-        </form>
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/NewStartaps" target="_Blank">
+              <mdb-icon fab icon="facebook-f" class="light-green-text-2"></mdb-icon>
+            </a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown" dropdown>
+            <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+              <mdb-icon fas icon="user"></mdb-icon>
+              <span class="caret"></span></a>
+            <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary dropdowm-menu-right" role="menu">
+              <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/login">Admin</a>
+            </div>
+          </li>
+        </ul>
       </links>
     </mdb-navbar>
     <!-- Full Page Intro -->
@@ -34,14 +43,18 @@
           <div class="row">
             <!--Grid column-->
             <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
-              <h1 class="h1-responsive font-weight-bold mt-sm-5">Make purchases with our app </h1>
+              <h1 class="h1-responsive font-weight-bold mt-sm-5">Nuestra misión</h1>
               <hr class="hr-light">
-              <h6 class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi
-                fuga nesciunt
-                dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae
-                iste.</h6>
-              <a mdbBtn color="white" mdbWavesEffect>Download</a>
-              <a mdbBtn color="white" outline="true" mdbWavesEffect>Learn more</a>
+              <h6 class="mb-4">Los tiempos vienen cambiando de una forma más inpredesible y en general podemos ver las 
+                economías siendo cada vez más solidas por medio de la tecnología, esto nos permite poder aprovechar 
+                dichas tecnologías para construir grandes proyectos con poco capital y tenemos la misión de enfocar 
+                esfuerzos de personas con grandes capacidades en formar equipos de trabajo donde estas personas puedan
+                sacar lo mejor de si mismos y aprovecharlo para construir un mejor entorno social y económico de la región.
+              </h6>
+              <h6 class="mb-4"> Pensamos que lo más importante es el capital humano antes que el capital monetario, por 
+                ente todo empieza desde una idea, luego la construcción de esa idea y por ultimo el capital y la viabilidad
+                de los proyectos.
+              </h6>
             </div>
             <!--Grid column-->
             <!--Grid column-->
