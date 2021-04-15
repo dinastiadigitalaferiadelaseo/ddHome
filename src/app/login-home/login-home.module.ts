@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { LoginHomePageComponent } from './login-home-page/login-home-page.component';
 import { MDBBootstrapModule } from 'projects/angular-bootstrap-md/src/public_api';
 import { NgwWowModule } from 'ngx-wow';
+import { NavbarLoginModule } from '../navbar-login/navbar-login.module';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { NgwWowModule } from 'ngx-wow';
     LoginHomeRoutingModule,
     MDBBootstrapModule.forRoot(),
     NgwWowModule,
+    NavbarLoginModule
   ]
 })
 export class LoginHomeModule { }

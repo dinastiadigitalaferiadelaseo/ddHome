@@ -1,0 +1,36 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <mdb-navbar-brand>
+        <a class="navbar-brand" href="">
+          <img class="animated bounce infinite" src="https://res.cloudinary.com/newstartap/image/upload/v1617051891/assetsNewStartap/Logo/logopng100x100_3_ufktuh.png" height="30" alt="">
+        </a>
+      </mdb-navbar-brand>
+  <links>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active waves-light" mdbWavesEffect >
+        <a class="nav-link" >Login Page <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item waves-light"  >
+        <a class="nav-link" href="">Inicio </a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-auto" >
+      <li class="nav-item active waves-light" mdbWavesEffect *ngIf="isLogged">
+        <a class="nav-link" >Usuario<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item waves-light" mdbWavesEffect *ngIf="isLogged">
+        <a class="nav-link" href="">{{user.email}}</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto" >
+     
+        <li class="nav-item" *ngIf="isLogged">
+          <a class="nav-link" (click)="logout()">
+            Salir
+            <mdb-icon fas icon="door-open"></mdb-icon>
+          </a>
+        </li>
+    </ul>
+  </links>
+</mdb-navbar>
+<!-- Navbar -->

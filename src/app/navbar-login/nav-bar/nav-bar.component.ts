@@ -1,20 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss'],
+  selector: 'app-nav-bar',
+  templateUrl: './nav-bar.component.html',
+  styleUrls: ['./nav-bar.component.scss'],
   providers: [AuthService],
 })
-export class HeaderComponent implements OnInit {
-  loginForm = new FormGroup({
-    email: new FormControl(''),
-    password: new FormControl(''),
-  });
+export class NavBarComponent implements OnInit {
 
+  
   public isLogged = false;
 
   public user: any;
@@ -33,11 +29,9 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  onLogin(){
-    const {email, password} = this.loginForm.value;
-    this.authService.login(email,password);
-    console.log('Form->', this.loginForm.value);
-    this._router.navigate(["/loginHome"]);
+  logout(){
+    this.authService.lotgout();
+    this._router.navigate(['/login']);
   }
 
 }
