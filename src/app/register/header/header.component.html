@@ -10,7 +10,7 @@
       <links>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active waves-light" mdbWavesEffect>
-            <a class="nav-link" >Login Page <span class="sr-only">(current)</span></a>
+            <a class="nav-link" >Register Page <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item waves-light" mdbWavesEffect>
             <a class="nav-link" href="">Inicio </a>
@@ -35,29 +35,16 @@
         <div class="container">
           <!--Grid row-->
           <div class="row pt-lg-5 mt-lg-5">
+            
             <!--Grid column-->
-            <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left wow fadeInLeft" data-wow-delay="0.3s">
-              <h1 class="display-4 font-weight-bold">Área Administrativa</h1>
-              <hr class="hr-light">
-              <h6 class="mb-3">Si tienes un proyecto en el cual deseas trabajarlo y desarrollarlo con un equipo especializado, 
-                  esa idea que no te deja dormir e inclusive no sabes por donde empezar, o tienes los recursos y la idea y no 
-                  tienes el equipo adecuado, ¡Cuentanos tu idea! estamos prestos a escucharte, guiarte, ver la viabilidad 
-                  del proyecto y ponernos en contacto a hacerte propuesta alguna.
-              </h6>
-              <a mdbBtn color="white" outline="true" mdbWavesEffect 
-              href="https://sites.google.com/correounivalle.edu.co/solicitud-nuevoproyecto/inicio" target="_Blank">
-              Enviar solicitud de Nuevo Proyecto</a>
-            </div>
-            <!--Grid column-->
-            <!--Grid column-->
-            <div class="col-md-6 col-xl-5 mb-4">
+            <div class="col-md-6 col-xl-5 mb-4" style="text-align: center; margin-right: auto; margin-left: auto;">
               <!--Form-->
               <mdb-card class="wow fadeInRight" data-wow-delay="0.3s">
                 <mdb-card-body class="z-depth-2">
                   <!--Header-->
                   <div class="text-center">
                     <h3 class="dark-grey-text">
-                      <strong>Login</strong>
+                      <strong>Registro de Usuarios</strong>
                     </h3>
                     <hr>
                   </div>
@@ -70,21 +57,19 @@
                        type="image/jpg" loading="lazy" class="imagenLogin">  
                   </picture>
                   <!--Body-->
-                  <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                  <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
                   <div class="md-form">
-                    <mdb-icon fas icon="envelope" class="prefix grey-text"></mdb-icon>
                     <input type="email" id="form3" class="form-control" mdbInput formControlName="email">
                     <label for="form3">Correo Electronico</label>
                   </div>
                   <div class="md-form">
-                    <mdb-icon fas icon="user" class="prefix grey-text"></mdb-icon>
                     <input type="password" id="form2" class="form-control" mdbInput formControlName="password">
                     <label for="form2">Contraseña</label>
                   </div>
                   <div>
                     <div class="buttonLogin">
-                  <button mdbBtn type="submit" gradient="purple" rounded="true" mdbWavesEffect class="buttonLogin" (click)="validarUser()">
-                    <mdb-icon fas icon="sign-in-alt"></mdb-icon> Ingresar 
+                  <button mdbBtn type="submit" gradient="purple" rounded="true" mdbWavesEffect class="buttonLogin">
+                     Registrar 
                   </button>
                     </div>
                   </div>
@@ -104,3 +89,4 @@
     <!-- Full Page Intro -->
   </header>
   <!-- Main navigation -->
+

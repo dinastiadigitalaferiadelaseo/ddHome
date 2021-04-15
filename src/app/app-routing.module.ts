@@ -13,6 +13,8 @@ const routes: Routes = [
   { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
   { path: 'mision', loadChildren: () => import('./mision/mision.module').then(m => m.MisionModule)},
   { path: 'vision', loadChildren: () => import('./vision/vision.module').then(m => m.VisionModule)},
+  { path: 'register', loadChildren: () => import('./register/register.module').then(m => m.RegisterModule)},
+  { path: 'loginHome', loadChildren: () => import('./login-home/login-home.module').then(m => m.LoginHomeModule)},
 ];
 
 @NgModule({

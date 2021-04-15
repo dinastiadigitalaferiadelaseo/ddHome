@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "ingenieria-de-sistemas-94faf"
+  },
+  "targets": {
+    "proyectosnewstartap": {
+      "hosting": {
+        "angular-bootstrap-md-app": [
+          "proyectosnewstartap"
+        ]
+      }
+    }
   }
 }
