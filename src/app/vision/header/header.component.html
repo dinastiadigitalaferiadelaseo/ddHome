@@ -1,1 +1,82 @@
-<p>header works!</p>
+<!-- Main navigation -->
+<header>
+    <!--Navbar-->
+    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <mdb-navbar-brand class="iconoPrincipal">
+        <a class="navbar-brand" href="">
+          <img class="animated bounce infinite" src="https://res.cloudinary.com/newstartap/image/upload/v1618598489/assetsNewStartap/Mision/logopng100x100_7_c2mcgq.png" height="30" alt="">
+        </a>
+      </mdb-navbar-brand>
+      <links>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/NewStartaps" target="_Blank">
+              <mdb-icon fab icon="facebook-f" class="light-green-text-2"></mdb-icon>
+            </a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown" dropdown>
+            <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+              <mdb-icon fas icon="user"></mdb-icon>
+              <span class="caret"></span></a>
+            <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary dropdowm-menu-right" role="menu">
+              <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/login">Admin</a>
+            </div>
+          </li>
+        </ul>
+      </links>
+    </mdb-navbar>
+    <!-- Full Page Intro -->
+    <div class="view" style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/architecture.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+        <!-- Content -->
+        <div class="container">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+              <h1 class="h1-responsive font-weight-bold mt-sm-5">Nuestra visión</h1>
+              <hr class="hr-light">
+              <h6 class="mb-4">
+                El poder del conocimiento ha llevado la ciencia y el desarrollo de las tecnologías a un nivel donde el 
+                hombre solamente soñaba con poder hacerlo, hoy en nuestra cotidianidad casi nada nos asombra por las
+                capacidades humanas ya adquiridas, el auge tecnológico lo podemos detallar de manera más precisa en las últimas
+                décadas, pero tenemos que ir más atrás, a las épocas donde apenas se descubre las características físicas de los
+                Transistores por citar un ejemplo, años atrás donde apenas las teorías se estaban generando y poniéndose en práctica.
+                Hoy gracias a estos pensadores y pioneros hemos podido visitar a marte, ver el Universo con una mejor perspectiva, volar
+                con la aeronáutica, comunicarnos de un continente a otro en milésimas de segundos.
+      
+              </h6>
+              <h6 class="mb-4"> Por todo esto estamos más que seguros que el conocimiento representa mayor importancia en la construcción
+                de ideas, iniciativas y proyectos, nuestra Visión es poder encontrar el mejor talento de desarrollo en el cual podamos 
+                emerger en soluciones drásticas para nuestra región, que hasta el momento ha sido subvalorada por las potencias mundiales.
+                "El poder que tenemos está en nuestra mente, las tecnologías a nuestro alcance, que nos impide ser potencia". 
+                ¡Solamente las necesidades básicas!. ¿Por qué no enfocarnos y esforzarnos por lo que en verdad tiene valor?.
+
+              </h6>
+            </div>
+            <!--Grid column-->
+            <!--Grid column-->
+            <div class="col-md-6 col-xl-5 mt-xl-5 wow fadeInRight" data-wow-delay="0.3s">
+              <img src="https://res.cloudinary.com/newstartap/image/upload/v1618597390/assetsNewStartap/Mision/New_Mision_vhxt3t.png" alt="" class="img-fluid">
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Content -->
+      </div>
+      <!-- Mask & flexbox options-->
+    </div>
+    <!-- Full Page Intro -->
+  </header>
+  <!-- Main navigation -->
+
