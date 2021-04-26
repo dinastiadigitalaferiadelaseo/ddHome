@@ -1,0 +1,154 @@
+<!-- app.component.html -->
+
+  
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" href="#">Dinastía Digital</a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link waves-light" mdbWavesEffect>Inicio <mdb-icon fas icon="home"></mdb-icon><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link waves-light" mdbWavesEffect>Historias de Ofertas<mdb-icon fas icon="home"></mdb-icon><span class="sr-only">(current)</span></a>
+        </li>
+         
+
+      </ul>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link waves-light" mdbWavesEffect>Punto Tecnologico </a>
+        </li>
+       
+
+    </ul>
+      <!-- Links -->
+
+<!-- Search form -->
+      <form class="form-inline waves-light" mdbWavesEffect>
+          <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Buscar en Tienda">
+          </div>
+      </form>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+
+
+<section class="my-5" >
+
+    <!--Grid row-->
+    <div class="row" style="margin-top: -30px;">
+      <div class="col-md-12">
+        <!--Featured image-->
+        <mdb-card cascade="true" wider="true" reverse="true" style="max-width: 90%; text-align: center;margin-right: auto; margin-left: auto;">
+          <div class="view view-cascade overlay waves-light" mdbWavesEffect style="max-height: 300px;">
+            <mdb-card-img src="https://mdbootstrap.com/img/Photos/Slides/img%20(142).jpg" alt="Wide sample post image" style="max-height: 200px;"></mdb-card-img>
+            <a>
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+        </mdb-card>
+          <!--Post data-->
+          <mdb-card cascade="true" wider="true" reverse="true" style="max-width: 70%; text-align: center;margin-right: auto; margin-left: auto; margin-top: -180px;">
+            <br/>
+            <h3>
+              <a class="font-weight-bold">Pc Gamer Acer Nitro 5- Intel Core I5 8gb 1tb Nvidia Geforce</a>
+            </h3>
+            <p>Nuevo, 
+               En oferta<strong class="red-text">%</strong> </p>
+               
+               <div class="row" style="margin-bottom: 10px;">
+                <div class="col-md-7" style="margin-left: 20px;">
+                <mdb-card style="text-align: center;
+                margin-right: auto; ">
+               <mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [type]="'carousel-thumbnails'" [animation]="'fade'">
+                
+                <mdb-carousel-item style="height: 380px; max-width: 900px; margin-bottom: 40px;" *ngFor="let image of imagesBasic">
+                  <a class="zoom" >
+                  <img class="d-block w-100 zoom" src="{{image.img}}" alt="First slide" >
+                </a>
+                </mdb-carousel-item>
+              </mdb-carousel>
+            </mdb-card>
+          </div>
+          <div class="col-md-4" style="margin-left: 10px;">
+            <mdb-card style="
+                margin-right: auto; ">
+                <br/>
+            <!-- <mdb-card-title style="text-align: right; margin-right: 30px;">
+              <h4>
+                <strong><mdb-icon fab icon="gratipay" class="indigo-text"></mdb-icon></strong>
+              </h4>
+              
+            </mdb-card-title> -->
+            <h5 style="text-align: left; margin-left: 10px;">
+              Precio: 
+              <strong class="indigo-text">$3.000.000</strong>
+            </h5>
+            <h5 style="text-align: left; margin-left: 10px;">
+              Medios de pago: 
+              <a href="">
+              <strong class="green-text"><mdb-icon fas icon="money-bill-alt"></mdb-icon></strong>
+              </a>
+            </h5>
+            <h5 style="text-align: left; margin-left: 10px;">
+              Fecha entrega: 
+              
+              <strong >2-15 días Hábiles <mdb-icon fas icon="fighter-jet" class="blue-grey-text"></mdb-icon></strong>
+              
+            </h5>
+            <hr/>
+            <h5 style="text-align: left; margin-left: 10px; margin-right: 10px;">
+              Color o estilo: 
+              <select class="browser-default custom-select indigo-text">
+                <option selected>Negro</option>
+                <option value="1">Blanco</option>
+                <option value="2">Amarillo</option>
+                <option value="3">Azul</option>
+              </select>
+              
+            </h5>
+            <h5 style="text-align: left; margin-left: 10px; margin-right: 10px;">
+              Talla: 
+              <select class="browser-default custom-select indigo-text">
+                <option selected>General</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </h5>
+            <h5 style="text-align: left; margin-left: 10px; margin-right: 10px;">
+              Cantidad: 
+              <select class="browser-default custom-select indigo-text" name="miselect" >
+                <option [value]="item" *ngFor="let item of lista">{{item}}</option>
+                </select>
+            </h5>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button mdbBtn type="button" color="primary" class="waves-light" mdbWavesEffect>Comprar ahora</button>
+              <button mdbBtn type="button" color="info" class="waves-light" mdbWavesEffect>Agregar <mdb-icon fas icon="shopping-cart"></mdb-icon></button>
+          </div>
+            
+            </mdb-card>
+          </div>
+          </div>
+          <!--Post data-->
+        </mdb-card>
+  
+      </div>
+    </div>
+   
+  
+  </section>
+  <!--Section: Blog v.4-->
+
+  
+  

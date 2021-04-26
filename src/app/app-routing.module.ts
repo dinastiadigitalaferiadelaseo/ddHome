@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'vision', loadChildren: () => import('./vision/vision.module').then(m => m.VisionModule)},
   { path: 'register', loadChildren: () => import('./register/register.module').then(m => m.RegisterModule), canActivate: [AngularFireAuthGuard]},
   { path: 'loginHome', loadChildren: () => import('./login-home/login-home.module').then(m => m.LoginHomeModule), canActivate: [AngularFireAuthGuard]},
+  { path: 'detalleProduct', loadChildren: () => import('./detalle-producto/detalle-producto.module').then(m => m.DetalleProductoModule)},
 ];
 
 @NgModule({

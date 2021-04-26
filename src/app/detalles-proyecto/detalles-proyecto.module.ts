@@ -18,7 +18,7 @@ import { HomeComponentsModule } from '../home-components/home-components.module'
     DetallesProyectoRoutingModule,
     MDBBootstrapModule.forRoot(),
     NgwWowModule,
-    HomeComponentsModule
+    HomeComponentsModule,
     
   ]
 })
